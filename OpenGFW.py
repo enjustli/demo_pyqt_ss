@@ -1,5 +1,7 @@
 #-*- coding: utf8 -*-
-
+"""
+This file is for generate pac file
+"""
 import requests
 import base64
 import traceback
@@ -94,12 +96,12 @@ function FindProxyForURL(url, host) {
     return pac
 
 
-def main():
+def main(argv):
     data = get_data()
     save_path = 'OpenGFW.pac'
     if data:
         good_data = json.dumps(address_filter(data))
-        pac = generate_pac(sys.argv[1], sys.argv[2], sys.argv[3], good_data)
+        pac = generate_pac(argv[0], argv[1], argv[2], good_data)
         save_data(pac, save_path)
         print('Created OpenGFW.pac successful !')
 
@@ -108,4 +110,4 @@ if __name__ == '__main__':
     if len(sys.argv) != 4:
         usage()
     else:
-        main()
+        main(sys.argv[1:3])

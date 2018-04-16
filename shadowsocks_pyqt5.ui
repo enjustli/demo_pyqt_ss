@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>751</width>
-    <height>476</height>
+    <width>731</width>
+    <height>452</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>shadowsocks_pyqt5</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="button_copy">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -26,7 +26,7 @@
     <string>copy</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="button_add">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -39,7 +39,7 @@
     <string>add</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="button_delete">
    <property name="geometry">
     <rect>
      <x>106</x>
@@ -52,37 +52,11 @@
     <string>delete</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="button_ok">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>445</y>
-     <width>80</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>move up</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_5">
-   <property name="geometry">
-    <rect>
-     <x>109</x>
-     <y>446</y>
-     <width>80</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>move down</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_6">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>440</y>
+     <x>280</x>
+     <y>410</y>
      <width>71</width>
      <height>20</height>
     </rect>
@@ -91,11 +65,11 @@
     <string>OK</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_7">
+  <widget class="QPushButton" name="button_cancel">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>440</y>
+     <y>410</y>
      <width>71</width>
      <height>20</height>
     </rect>
@@ -104,27 +78,27 @@
     <string>cancel</string>
    </property>
   </widget>
-  <widget class="QListWidget" name="listWidget">
+  <widget class="QListWidget" name="listWidget_server_list">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>20</y>
+     <x>20</x>
+     <y>30</y>
      <width>181</width>
      <height>311</height>
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_8">
+  <widget class="QLineEdit" name="lineEdit_Proxy_port">
    <property name="geometry">
     <rect>
      <x>350</x>
-     <y>390</y>
+     <y>370</y>
      <width>90</width>
      <height>19</height>
     </rect>
    </property>
   </widget>
-  <widget class="QGroupBox" name="groupBox">
+  <widget class="QGroupBox" name="groupBox_server_config">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -136,7 +110,7 @@
    <property name="title">
     <string>server</string>
    </property>
-   <widget class="QLineEdit" name="lineEdit_13">
+   <widget class="QLineEdit" name="lineEdit_serverip">
     <property name="geometry">
      <rect>
       <x>80</x>
@@ -172,7 +146,7 @@
      <string>timeout(s) </string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_11">
+   <widget class="QLineEdit" name="lineEdit_password">
     <property name="geometry">
      <rect>
       <x>84</x>
@@ -195,7 +169,7 @@
      <string>server port</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox">
+   <widget class="QCheckBox" name="checkBox_show_password">
     <property name="geometry">
      <rect>
       <x>89</x>
@@ -221,7 +195,7 @@
      <string>password   </string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_12">
+   <widget class="QLineEdit" name="lineEdit_timeout">
     <property name="geometry">
      <rect>
       <x>83</x>
@@ -231,7 +205,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox">
+   <widget class="QComboBox" name="comboBox_encryption">
     <property name="geometry">
      <rect>
       <x>89</x>
@@ -269,7 +243,7 @@
      <string>encryption</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_10">
+   <widget class="QLineEdit" name="lineEdit_server_port">
     <property name="geometry">
      <rect>
       <x>83</x>
@@ -280,7 +254,7 @@
     </property>
    </widget>
   </widget>
-  <widget class="QGroupBox" name="groupBox_2">
+  <widget class="QGroupBox" name="groupBox_settings">
    <property name="geometry">
     <rect>
      <x>470</x>
@@ -292,7 +266,7 @@
    <property name="title">
     <string>Settings</string>
    </property>
-   <widget class="QTextEdit" name="textEdit_2">
+   <widget class="QTextEdit" name="textEdit_socksproxy">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -309,7 +283,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;127.0.0.1:2589&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_4">
+   <widget class="QCheckBox" name="checkBox_acting_all_traffic">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -322,7 +296,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_2">
+   <widget class="QCheckBox" name="checkBox_enable_system_agent">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -335,7 +309,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit">
+   <widget class="QTextEdit" name="textEdit_httpproxy">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -408,8 +382,8 @@ p, li { white-space: pre-wrap; }
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>281</x>
-     <y>390</y>
+     <x>280</x>
+     <y>370</y>
      <width>63</width>
      <height>19</height>
     </rect>
