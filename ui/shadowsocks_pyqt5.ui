@@ -97,6 +97,9 @@
      <height>19</height>
     </rect>
    </property>
+   <property name="text">
+    <string>1080</string>
+   </property>
   </widget>
   <widget class="QGroupBox" name="groupBox_server_config">
    <property name="geometry">
@@ -118,6 +121,9 @@
       <width>108</width>
       <height>29</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>127.0.0.1</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_7">
@@ -155,6 +161,12 @@
       <height>29</height>
      </rect>
     </property>
+    <property name="text">
+     <string>123456</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
    </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
@@ -178,8 +190,14 @@
       <height>27</height>
      </rect>
     </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
     <property name="text">
      <string>show password</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
@@ -203,6 +221,9 @@
       <width>108</width>
       <height>29</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>300</string>
     </property>
    </widget>
    <widget class="QComboBox" name="comboBox_encryption">
@@ -251,6 +272,9 @@
       <width>108</width>
       <height>29</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>8088</string>
     </property>
    </widget>
   </widget>
@@ -307,6 +331,9 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QTextEdit" name="textEdit_httpproxy">

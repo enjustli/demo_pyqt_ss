@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 
 
 
@@ -14,7 +14,7 @@ if hasattr(PyQt5.QtCore.Qt,'AA_UseHighDpiPixmaps'):
 
 
 
-from shadowsocks_pyqt5 import (Ui_Form)
+from ui.shadowsocks_pyqt5 import (Ui_Form)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
